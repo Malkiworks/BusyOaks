@@ -94,7 +94,7 @@ export const AnimatedButton = ({
     <motion.button
       ref={elementRef as React.RefObject<HTMLButtonElement>}
       {...commonProps}
-      {...(props as Omit<ButtonProps, keyof typeof commonProps>)}
+      {...(props as any)}
     >
       {children}
     </motion.button>
