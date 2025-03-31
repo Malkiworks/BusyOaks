@@ -2,7 +2,7 @@ services:
   - type: web
     name: busyoaks
     env: static
-    buildCommand: npm install && npm run build && npm run export
+    buildCommand: npm install && npm run build
     staticPublishPath: ./out
     routes:
       - type: rewrite

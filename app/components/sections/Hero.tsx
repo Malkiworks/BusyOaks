@@ -9,7 +9,7 @@ import gsap from 'gsap';
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
-  const inView = useInView(containerRef, { once: false, threshold: 0.1 });
+  const inView = useInView(containerRef, { once: false });
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start start', 'end start']
