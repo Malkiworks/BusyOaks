@@ -66,7 +66,7 @@ export const Hero = () => {
       transition: {
         duration: 1.5,
         repeat: Infinity,
-        repeatType: 'loop'
+        repeatType: "loop" as const
       }
     }
   };
