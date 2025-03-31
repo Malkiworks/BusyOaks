@@ -82,7 +82,7 @@ export const AnimatedButton = ({
         target={target}
         rel={rel}
         {...commonProps}
-        {...(props as Omit<AnchorProps, keyof typeof commonProps>)}
+        {...props as any}
       >
         {children}
       </motion.a>
