@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: busyoaks
+    env: static
+    buildCommand: npm install && npm run build && npm run export
+    staticPublishPath: ./out
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html 

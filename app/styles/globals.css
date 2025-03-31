@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 25, 41;
+  --background-end-rgb: 26, 32, 44;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 10, 25, 41;
+    --background-end-rgb: 26, 32, 44;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgba(var(--background-start-rgb), 1),
+      rgba(var(--background-end-rgb), 1)
+    )
+    fixed;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-electric-teal to-lime-green animate-text-gradient;
+  }
+  
+  .btn-primary {
+    @apply relative overflow-hidden bg-transparent border-2 border-electric-teal text-white px-6 py-3 rounded-lg 
+    transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,255,0.5)] hover:-translate-y-1;
+  }
+
+  .btn-primary::before {
+    @apply absolute top-0 left-0 w-0 h-full bg-gradient-to-r from-electric-teal/20 to-lime-green/20 
+    transition-all duration-300 content-[''] rounded-lg;
+  }
+
+  .btn-primary:hover::before {
+    @apply w-full;
+  }
+
+  .card-hover {
+    @apply relative overflow-hidden bg-charcoal/30 backdrop-blur-sm border border-white/10 rounded-xl 
+    transition-all duration-300 shadow-xl;
+  }
+
+  .card-hover::before {
+    @apply absolute inset-0 z-0 bg-gradient-to-r from-electric-teal/0 to-lime-green/0 opacity-0 
+    transition-all duration-300 content-[''];
+  }
+
+  .card-hover:hover {
+    @apply transform -translate-y-2 border-electric-teal/30 shadow-[0_10px_25px_rgba(0,255,255,0.2)];
+  }
+
+  .card-hover:hover::before {
+    @apply opacity-10;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-charcoal/30 border border-white/10;
+  }
+
+  .typing-animation {
+    @apply inline-block overflow-hidden whitespace-nowrap border-r-4 border-electric-teal animate-typing;
+  }
+
+  .magnetic-button {
+    @apply relative transform transition-transform duration-300 hover:scale-105;
+  }
+
+  .custom-cursor {
+    @apply bg-electric-teal w-5 h-5 rounded-full fixed pointer-events-none z-50 transition-all 
+    duration-75 ease-out opacity-70 mix-blend-screen;
+  }
+
+  .neon-border {
+    @apply relative;
+  }
+
+  .neon-border::after {
+    @apply absolute inset-0 rounded-lg content-[''] z-[-1];
+    box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.5);
+  }
+
+  .morphing-blob {
+    @apply bg-gradient-to-r from-electric-teal to-lime-green rounded-full filter blur-xl opacity-20 
+    absolute animate-morph-slow;
+  }
+} 
