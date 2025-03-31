@@ -82,7 +82,7 @@ export const AnimatedButton = ({
         target={target}
         rel={rel}
         {...commonProps}
-        {...props as AnchorProps}
+        {...(props as Omit<AnchorProps, keyof typeof commonProps>)}
       >
         {children}
       </motion.a>
@@ -94,7 +94,7 @@ export const AnimatedButton = ({
     <motion.button
       ref={elementRef as React.RefObject<HTMLButtonElement>}
       {...commonProps}
-      {...props as ButtonProps}
+      {...(props as Omit<ButtonProps, keyof typeof commonProps>)}
     >
       {children}
     </motion.button>
