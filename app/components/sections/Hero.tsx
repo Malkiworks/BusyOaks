@@ -96,6 +96,7 @@ export const Hero = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mb-4 inline-block"
         >
+          <div style={{ marginTop: '10px' }}></div>
           <span className="bg-electric-teal/20 text-electric-teal py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm md:text-base font-medium">
             Web Design & Development Services
           </span>
