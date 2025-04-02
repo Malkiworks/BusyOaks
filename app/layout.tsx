@@ -17,6 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata = {
   title: 'Busy Oaks - Modern Web Design & Development',
   description: 'High-impact web design & development with advanced animations and interactive elements. Perfect for businesses looking to stand out.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 };
 
 export default function RootLayout({
@@ -26,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      </head>
       <body>
         <AnimationProvider>
           {children}

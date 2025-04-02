@@ -87,7 +87,7 @@ export const Hero = () => {
       <div className="absolute bottom-[5%] right-[3%] w-48 sm:w-80 h-48 sm:h-80 morphing-blob opacity-30 sm:opacity-20" />
       
       <motion.div
-        className="relative z-10 max-w-5xl mx-auto text-center px-2"
+        className="relative z-10 max-w-5xl mx-auto text-center px-2 pt-16 md:pt-0"
         style={{ y, opacity }}
       >
         <motion.div

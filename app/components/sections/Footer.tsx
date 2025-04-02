@@ -68,22 +68,17 @@ export const Footer = () => {
             </p>
             
             <div className="flex space-x-4 mb-8">
-              {['GitHub', 'Twitter', 'LinkedIn', 'Discord'].map((platform) => (
-                <motion.a
-                  key={platform}
-                  href="#"
-                  className="w-9 h-9 rounded-full bg-charcoal/40 text-white/60 flex items-center justify-center hover:text-electric-teal hover:bg-charcoal transition-colors duration-300"
-                  whileHover={{ scale: 1.1, boxShadow: '0 0 10px rgba(0, 255, 255, 0.3)' }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className="sr-only">{platform}</span>
-                  {/* Simple placeholders for social icons */}
-                  {platform === 'GitHub' && <span className="text-sm">GH</span>}
-                  {platform === 'Twitter' && <span className="text-sm">TW</span>}
-                  {platform === 'LinkedIn' && <span className="text-sm">LI</span>}
-                  {platform === 'Discord' && <span className="text-sm">DS</span>}
-                </motion.a>
-              ))}
+              <motion.a
+                href="https://instagram.com/busy.oaks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-charcoal/40 text-white/60 flex items-center justify-center hover:text-electric-teal hover:bg-charcoal transition-colors duration-300"
+                whileHover={{ scale: 1.1, boxShadow: '0 0 10px rgba(0, 255, 255, 0.3)' }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="sr-only">Instagram</span>
+                <span className="text-sm">IG</span>
+              </motion.a>
             </div>
           </div>
           

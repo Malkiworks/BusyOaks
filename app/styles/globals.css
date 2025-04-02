@@ -27,6 +27,18 @@ body {
   overflow-x: hidden;
 }
 
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+  
+  section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
 @layer components {
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-electric-teal to-lime-green animate-text-gradient;
