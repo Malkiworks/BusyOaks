@@ -20,6 +20,36 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 6,
+    title: 'Broker Connect SA',
+    description: 'Connecting clients with financial brokers in South Africa',
+    imageUrl: '/images/portfolio/brokerconnect.jpg',
+    tags: ['React', 'Next.js', 'TailwindCSS', 'Finance'],
+    detailedDesc: 'Broker Connect SA is a platform that connects clients with trusted financial brokers across South Africa, simplifying the process of finding expert financial advice.',
+    features: [
+      'Broker directory',
+      'Service filters',
+      'Contact request system',
+      'Mobile-friendly interface'
+    ],
+    liveDemoUrl: 'https://brokerconnectsa.com'
+  },
+  {
+    id: 7,
+    title: 'Capital Bulls Trading',
+    description: 'Professional trading platform with advanced analysis tools',
+    imageUrl: '/images/portfolio/capitalbulls.jpg',
+    tags: ['React', 'Next.js', 'Tailwind', 'Trading API'],
+    detailedDesc: 'Capital Bulls Trading is a professional trading platform offering advanced market analysis and trading signals.',
+    features: [
+      'Live market data',
+      'Trading signals',
+      'Membership plans',
+      'Educational resources'
+    ],
+    liveDemoUrl: 'https://tradewithcapitalbulls.com'
+  },
+  {
     id: 1,
     title: 'Bier Tempratuur',
     description: 'Premium lifestyle brand with limited-edition apparel',
@@ -78,21 +108,6 @@ const projects: Project[] = [
       'Responsive dashboard'
     ],
     liveDemoUrl: 'https://wc-cbgl.onrender.com'
-  },
-  {
-    id: 5,
-    title: 'Capital Bulls Trading',
-    description: 'Professional trading platform with advanced analysis tools',
-    imageUrl: '/images/portfolio/capitalbulls.jpg',
-    tags: ['React', 'Next.js', 'Tailwind', 'Trading API'],
-    detailedDesc: 'Capital Bulls Trading is a professional trading platform offering advanced market analysis and trading signals.',
-    features: [
-      'Live market data',
-      'Trading signals',
-      'Membership plans',
-      'Educational resources'
-    ],
-    liveDemoUrl: 'https://tradewithcapitalbulls.com'
   }
 ];
 
