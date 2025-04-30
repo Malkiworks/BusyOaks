@@ -73,7 +73,7 @@ export const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-medium">Joshua Malki</p>
+                  <p className="text-white font-medium">Joshua Malki <span className="text-electric-teal text-sm ml-1">CEO</span></p>
                   <a href="tel:+27797384779" className="text-white/60 hover:text-electric-teal transition-colors">+27 79 738 4779</a>
                 </div>
               </div>
@@ -87,6 +87,18 @@ export const Contact = () => {
                 <div>
                   <p className="text-white font-medium">Dylan Duminy</p>
                   <a href="tel:+27662325409" className="text-white/60 hover:text-electric-teal transition-colors">+27 66 232 5409</a>
+                </div>
+              </div>
+              
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-electric-teal/20 flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-electric-teal">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-white font-medium">Skye</p>
+                  <a href="tel:+27763835854" className="text-white/60 hover:text-electric-teal transition-colors">+27 76 383 5854</a>
                 </div>
               </div>
               
