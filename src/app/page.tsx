@@ -3,10 +3,8 @@
 import { Spotlight } from "@/components/ui/spotlight";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import {
   IconBrandInstagram,
-  IconBrandLinkedin,
   IconMail,
   IconPhone,
   IconCode,
@@ -252,7 +250,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-xl text-neutral-300 mb-8 max-w-2xl mx-auto"
           >
-            Get a free consultation and quote for your next digital project. Let's build something amazing together.
+            Get a free consultation and quote for your next digital project. Let&apos;s build something amazing together.
           </motion.p>
 
           <motion.div
@@ -446,9 +444,7 @@ export default function Home() {
   );
 }
 
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
+
 
 const ServiceImage = ({ src, alt }: { src: string; alt: string }) => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
